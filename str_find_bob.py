@@ -11,11 +11,28 @@ Algorithm:
 
 """
 
-s = 'azcbobobegghakl'
+s = 'obnbobobobobbobobboboboboboboboboboooboo'
 
 # bob counter
 bobCounter = 0
 
+# start and end indexes to get subset of string
+# intial value 0, 3 - first three characters from s
+startIndex, endIndex = 0, 3
+
+# check for each subset of 3 characters from string s
+"""
+while endIndex <= len(s):
+  if s[startIndex:endIndex] == "bob":
+    bobCounter += 1
+  startIndex += 1
+  endIndex += 1
+"""
+print(len(s))
+
+for i in range(len(s)):
+  if s[i:i+3] == "bob":
+    bobCounter += 1
 
 # print result
 print("Number of times bob occurs is:", str(bobCounter))
