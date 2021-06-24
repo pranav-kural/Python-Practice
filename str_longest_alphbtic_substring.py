@@ -55,7 +55,6 @@ for i in range(len(s)):
     # if all characters in s starting from index i are in alphabetical order, break out of loop
     if len(currLongestSubstr) == len(s[i:]):
         break
-   
 # end of outer for loop
 
 # print result
